@@ -1,9 +1,9 @@
 import Image from "next/image";
-
+import { LandingPageComponent } from "@/components/landing-page";
 export default function Home() {
   return (
     <div>
-      <h1>Helll</h1>
+      <LandingPageComponent/>
     </div>
   );
 }
