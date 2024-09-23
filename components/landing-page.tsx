@@ -38,19 +38,18 @@ export function LandingPageComponent() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black px-12">
           <div className="flex justify-between px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
+            <div className="flex justify-between">
               <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-white">
+                <div className="space-y-2 px-6">
+                  <h1 className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-white">
                     Discover Your New Home Away From Home
                   </h1>
-                  <p className="max-w-[600px] text-gray-200 md:text-xl">
+                  <p className="text-gray-200 md:text-xl pt-2">
                     Darts helps students uncover the best attractions, hidden gems, and local favorites in their new country of study.
                   </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <div className="flex flex-col gap-2 min-[400px]:flex-row pt-4">
                   <Button className="bg-white text-primary hover:bg-gray-100 inline-flex items-center">
                     <ArrowRight className="mr-2 h-4 w-4" />
                     Get Started
@@ -61,8 +60,9 @@ export function LandingPageComponent() {
                   </Button>
                 </div>
                 <p className="text-sm text-gray-200">
-                  Available for iOS and Android. No credit card required.
+                 No credit card required.
                 </p>
+                </div>
               </div>
               <div className="flex items-center justify-center">
                 <Image
@@ -157,10 +157,10 @@ export function LandingPageComponent() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-primary">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-2">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-black">
+          <div className="flex flex-col items-center px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2 flex flex-col jusity-center items-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-white">
                   Ready to Explore Your New Home?
                 </h2>
@@ -180,13 +180,13 @@ export function LandingPageComponent() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col justify-between gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 bg-gray-100">
-        <p className="text-xs text-gray-500">© 2024 StudentExplorer. All rights reserved.</p>
+      <footer className="flex flex-col text-black justify-between gap-2 sm:flex-row py-10 w-full shrink-0 items-center px-4 md:px-6 bg-gray-100">
+        <p className="text-xs text-gray-500">© 2024 Darts. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
+          <Link className="text-xs text-black hover:underline underline-offset-4" href="#">
             Terms of Service
           </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
+          <Link className="text-xs text-black hover:underline underline-offset-4" href="#">
             Privacy
           </Link>
         </nav>
