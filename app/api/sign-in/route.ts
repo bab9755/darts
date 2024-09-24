@@ -39,7 +39,8 @@ export async function POST(request: Request){
         process.env.JWT_SECRET
       )
       const alg = 'HS256' 
-      const jwt = await new jose.SignJWT({})
+      //sign the jwt with the user id (this saves the user id in the payload and can be used later)
+      const jwt = await new jose.SignJWT({id: user.id})
         .setProtectedHeader({ alg })
         .setAudience('urn:example:audience')
         .setExpirationTime('72h')

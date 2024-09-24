@@ -13,17 +13,6 @@ const SignIn = () => {
 
    const [error, formAction] = useFormState(signin, undefined)
     return ( 
-    // <div>
-    //     <h1>Sign In</h1>
-    //     <form action={formAction}>
-    //     <input type="email" name='email' />
-    //     <input type="password" name='password' />
-    //     <button type='submit'>Sign up</button>
-    //     </form>
-        
-    // </div> 
-    // xl:min-h-[800px]
-    // lg:min-h-[600px]
     <div className="w-full h-screen lg:grid lg:grid-cols-2">
     <form action={formAction}>
   <div className="flex items-center justify-center py-12">

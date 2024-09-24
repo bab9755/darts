@@ -23,7 +23,7 @@ export default async function signin(currentState: any, formData: FormData): Pro
         sameSite: "strict" 
     })
     if (res.ok){
-        redirect('/dashboard ')
+        redirect('/onboarding ')
         return ''
     } else {
         console.error('Error:', json); // Log the error response
